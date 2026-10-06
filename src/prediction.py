@@ -1,10 +1,10 @@
 import joblib
 import pandas as pd
  
-model = joblib.load("../MODEL/loan_default.pkl")
+model = joblib.load("./MODEL/loan_default.pkl")
  
 # create a test sample data
-test_df = pd.read_csv("../DATA/x_test_sample.csv")
+test_df = pd.read_csv("./DATA/x_test_sample.csv")
 
 test_df.drop('Unnamed: 0', axis = 1, inplace = True)
 
